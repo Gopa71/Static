@@ -7,3 +7,9 @@ class place(models.Model):
     desc=models.TextField()
     def __str__(self):
         return self.name
+class team(models.Model):
+    name=models.CharField(max_length=50)
+    photo=models.ImageField( upload_to='teams')
+    desc=models.TextField()
+    def __str__(self):
+        return self.name
